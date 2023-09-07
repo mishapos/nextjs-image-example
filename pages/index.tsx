@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ViewSource from '../components/view-source'
 import vercel from '../public/vercel.png'
+import cat from '../public/cat.jpg'
+import dog from '../public/dog.jpg'
 import type { PropsWithChildren } from 'react'
 
 const Code = (props: PropsWithChildren<{}>) => (
@@ -69,6 +71,16 @@ const Index = () => (
         src={vercel}
         width={1000}
         height={1000}
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+        }}
+      />
+      <Image
+        alt="Dog"
+        src={dog}
+        width={500}
+        height={500}
         style={{
           maxWidth: '100%',
           height: 'auto',
